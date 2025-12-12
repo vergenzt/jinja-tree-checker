@@ -22,7 +22,7 @@ tree-sitter-grammar = "sql"
 files = ["**/*.sql"]
 ```
 
-```jinja-sql
+```sql
 # file: macros/fizzbuzz.sql
 {%- macro fizzbuzz(n) %}
   {#-
@@ -40,7 +40,7 @@ files = ["**/*.sql"]
 {%- endmacro %}
 ```
 
-```jinja-sql
+```sql
 # file: models/fizzbuzz.sql
 select
   {{ fizzbuzz('n') }}
