@@ -1,0 +1,10 @@
+[project]
+name = "test-project"
+version = "0.1.0"
+description = "Test project for jinja-tree-checker"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core>=1.10.15",
+    "dbt-sqlite>=1.10.0",
+]
