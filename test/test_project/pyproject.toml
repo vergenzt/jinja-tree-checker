@@ -8,3 +8,16 @@ dependencies = [
     "dbt-core>=1.10.15",
     "dbt-sqlite>=1.10.0",
 ]
+
+[dependency-groups]
+dev = [
+    "jinja-tree-checker",
+    "tree-sitter-sql>=0.3.11",
+]
+
+[tool.uv.sources]
+jinja-tree-checker = { workspace = true }
+
+[tool.jinja-tree-checker]
+tree-sitter-grammar = "sql"
+files = ["**/*.sql"]
