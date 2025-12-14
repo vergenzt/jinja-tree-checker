@@ -50,4 +50,7 @@ def main():
         )
         jinja_cursor = QueryCursor(jinja_query)
         jinja_texts = jinja_cursor.captures(jinja_tree.root_node)
+
+        # TODO: look at https://github.com/tree-sitter/tree-sitter/blob/98de2bc1a87bd2e7ef7f299fbd8843400978efe4/lib/include/tree_sitter/api.h#L1276-L1291
+
         breakpoint()
