@@ -1,0 +1,9 @@
+[project]
+name = "jinja-tree-checker"
+version = "0.1.0-dev"
+description = "AST type checker for Jinja templates and macros"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "tree-sitter>=0.25.2",
+]
